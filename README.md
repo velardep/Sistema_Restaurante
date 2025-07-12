@@ -105,12 +105,12 @@ A continuación, algunas vistas del sistema en funcionamiento:
 </p>
 
 <p align="center">
-  <img src="img/gestion_menu2.png" width="600" alt="menu2"><br>
+  <img src="demo/gestion_menu2.png" width="600" alt="menu2"><br>
   <em>Gestion de Menu</em>
 </p>
 
 <p align="center">
-  <img src="img/registrar_reserva.png" width="600" alt="reserva"><br>
+  <img src="demo/registrar_reserva.png" width="600" alt="reserva"><br>
   <em>Registro de Reserva</em>
 </p>
 
