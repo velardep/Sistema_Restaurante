@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://gitingest.com/velardep/Sistema_Restaurante" target="_blank">
-    <img src="img/logo_restaurante.png" width="300" alt="Sistema Restaurante">
+    <img src="../public_html/assets/imgs/logo.png" width="300" alt="Sistema Restaurante">
   </a>
 </p>
 
