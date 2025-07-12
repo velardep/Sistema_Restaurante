@@ -4,12 +4,12 @@
   </a>
 </p>
 
-<h2 align="center">🍽️ Sistema Restaurante – Gestión Web</h2>
+<h2 align="center">Sistema Restaurante – Gestión Web</h2>
 
 Aplicación web para administrar de manera integral las operaciones internas de un restaurante: usuarios, pedidos, menús, inventario y reportes. Ideal para locales pequeños o medianos que buscan automatizar su gestión diaria.
 
 
-## 🖥️ Requisitos del sistema
+## Requisitos del sistema
 
 - PHP ≥ 7.4  
 - Composer  
@@ -19,7 +19,7 @@ Aplicación web para administrar de manera integral las operaciones internas de 
 
 ---
 
-## ⚙️ Instalación del proyecto
+## Instalación del proyecto
 
 ```bash
 # Clonar el repositorio
@@ -42,7 +42,7 @@ composer install
 
 ---
 
-## 🧪 ¿Cómo funciona?
+## ¿Cómo funciona?
 
 * El sistema tiene autenticación de usuarios (login básico).
 * Organización por módulos:
@@ -55,7 +55,7 @@ composer install
 
 ---
 
-## ✨ Tecnologías usadas
+## Tecnologías usadas
 
 * PHP puro (con opción de integrar Laravel)
 * MySQL
@@ -66,7 +66,7 @@ composer install
 * Composer (dependencias PHP)
 
 ---
-## 📥 Restaurar la base de datos
+## Restaurar la base de datos
 
 1. Accede a `http://localhost/phpmyadmin`
 2. Crea una base de datos llamada `foothut2`
@@ -87,7 +87,7 @@ composer install
 ---
 
 
-## 🚀 Ejecución local
+## Ejecución local
 
 Abre tu navegador y ve a:
 
@@ -95,7 +95,7 @@ Abre tu navegador y ve a:
 http://localhost/Sistema_Restaurante
 ```
 
-## 🖼️ Capturas de pantalla
+## Capturas de pantalla
 
 A continuación, algunas vistas del sistema en funcionamiento:
 
@@ -116,7 +116,7 @@ A continuación, algunas vistas del sistema en funcionamiento:
 
 ---
 
-## 👨‍💻 Destinado a
+## Destinado a
 
 * Emprendedores gastronómicos
 * Restaurantes pequeños o medianos
@@ -127,7 +127,7 @@ A continuación, algunas vistas del sistema en funcionamiento:
 
 ---
 
-## 🗒️ Notas
+## Notas
 
 * El proyecto puede ampliarse fácilmente con funciones como delivery, pagos en línea, facturación, etc.
 * Si tienes errores con rutas o archivos, revisa el `.htaccess` o la configuración del entorno.
