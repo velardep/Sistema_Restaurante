@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://www.php.net/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" width="120" alt="PHP Logo">
+  </a>
+</p>
+
 <h2 align="center">🍽️ Sistema Restaurante – Gestión Web</h2>
 
 Aplicación web para administrar de manera integral las operaciones internas de un restaurante: usuarios, pedidos, menús, inventario y reportes. Ideal para locales pequeños o medianos que buscan automatizar su gestión diaria.
@@ -94,29 +100,19 @@ http://localhost/Sistema_Restaurante
 A continuación, algunas vistas del sistema en funcionamiento:
 
 <p align="center">
-  <img src="demo/login.png" alt="Registro de denuncia" width="600"><br>
-    <em>Pantalla de inicio de sesión</em>
+  <img src="demo/gestion_menu.png" alt="menu" width="600"><br>
+    <em>Menu</em>
 </p>
 
 <p align="center">
-  <img src="img/dashboard.png" width="600" alt="Dashboard"><br>
-  <em>Panel principal del sistema</em>
+  <img src="img/gestion_menu2.png" width="600" alt="menu2"><br>
+  <em>Gestion de Menu</em>
 </p>
 
 <p align="center">
-  <img src="img/gestion_pedidos.png" width="600" alt="Gestión de pedidos"><br>
-  <em>Gestión de pedidos y menú</em>
+  <img src="img/registrar_reserva.png" width="600" alt="reserva"><br>
+  <em>Registro de Reserva</em>
 </p>
-
----
-
-## 🗒️ Notas
-
-* El proyecto puede ampliarse fácilmente con funciones como delivery, pagos en línea, facturación, etc.
-* Si tienes errores con rutas o archivos, revisa el `.htaccess` o la configuración del entorno.
-* Se recomienda trabajar con un servidor local que soporte URLs amigables (mod\_rewrite habilitado).
-
----
 
 ---
 
@@ -127,6 +123,16 @@ A continuación, algunas vistas del sistema en funcionamiento:
 * Estudiantes de programación
 * Proyectos académicos de software
 
+---
+
+---
+
+## 🗒️ Notas
+
+* El proyecto puede ampliarse fácilmente con funciones como delivery, pagos en línea, facturación, etc.
+* Si tienes errores con rutas o archivos, revisa el `.htaccess` o la configuración del entorno.
+* Se recomienda trabajar con un servidor local que soporte URLs amigables (mod\_rewrite habilitado).
+* Aclarar que este proyecto necesita mejoras para su implementacion comercial.
 ---
 
 
