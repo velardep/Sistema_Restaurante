@@ -1,9 +1,3 @@
-
-<p align="center">
-  <a href="https://gitingest.com/velardep/Sistema_Restaurante" target="_blank">
-    <img src="../public_html/assets/imgs/logo1.svg" class="brand-img">  </a>
-</p>
-
 <h2 align="center">🍽️ Sistema Restaurante – Gestión Web</h2>
 
 Aplicación web para administrar de manera integral las operaciones internas de un restaurante: usuarios, pedidos, menús, inventario y reportes. Ideal para locales pequeños o medianos que buscan automatizar su gestión diaria.
@@ -66,14 +60,26 @@ composer install
 * Composer (dependencias PHP)
 
 ---
-
 ## 📥 Restaurar la base de datos
 
 1. Accede a `http://localhost/phpmyadmin`
-2. Crea la base de datos `foothut2`
+2. Crea una base de datos llamada `foothut2`
 3. Importa el archivo `foothut2.sql` incluido en el repositorio
 
+> ⚠️ **IMPORTANTE**:  
+> La primera vez que ingreses al sistema, se mostrará la vista de usuarios (cliente).  
+> Para acceder a la **vista de administrador**, sigue estos pasos:
+>
+> 1. Regístrate con cualquier correo desde la vista de usuarios.
+> 2. Abre `phpMyAdmin`, selecciona la base `foothut2`, y entra a la tabla `cliente`.
+> 3. Ubica el correo registrado y cambia el valor del campo `rol` de `0` a `1`.
+>
+> - `rol = 0` → Usuario cliente  
+> - `rol = 1` → Usuario administrador  
+>
+> Al iniciar sesión nuevamente con ese correo, serás redirigido a la vista de administrador.
 ---
+
 
 ## 🚀 Ejecución local
 
@@ -85,9 +91,11 @@ http://localhost/Sistema_Restaurante
 
 ## 🖼️ Capturas de pantalla
 
+A continuación, algunas vistas del sistema en funcionamiento:
+
 <p align="center">
-  <img src="img/login.png" width="600" alt="Login del sistema"><br>
-  <em>Pantalla de inicio de sesión</em>
+  <img src="demo/login.png" alt="Registro de denuncia" width="600"><br>
+    <em>Pantalla de inicio de sesión</em>
 </p>
 
 <p align="center">
