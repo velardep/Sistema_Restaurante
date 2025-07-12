@@ -1,8 +1,4 @@
-¡Perfecto! Aquí tienes el `README.md` **completo** en **formato Markdown**, con todo el contenido listo para copiar/pegar directamente dentro de tu repositorio:
 
----
-
-````markdown
 <p align="center">
   <a href="https://gitingest.com/velardep/Sistema_Restaurante" target="_blank">
     <img src="img/logo_restaurante.png" width="300" alt="Sistema Restaurante">
@@ -13,7 +9,6 @@
 
 Aplicación web para administrar de manera integral las operaciones internas de un restaurante: usuarios, pedidos, menús, inventario y reportes. Ideal para locales pequeños o medianos que buscan automatizar su gestión diaria.
 
----
 
 ## 🖥️ Requisitos del sistema
 
