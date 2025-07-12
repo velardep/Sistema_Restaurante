@@ -1,117 +1,132 @@
+¡Perfecto! Aquí tienes el `README.md` **completo** en **formato Markdown**, con todo el contenido listo para copiar/pegar directamente dentro de tu repositorio:
 
+---
 
 ````markdown
-# 🍽️ Sistema Restaurante
+<p align="center">
+  <a href="https://gitingest.com/velardep/Sistema_Restaurante" target="_blank">
+    <img src="img/logo_restaurante.png" width="300" alt="Sistema Restaurante">
+  </a>
+</p>
 
-Sistema web para la gestión integral de un restaurante, desarrollado como parte de un proyecto académico o profesional. Este sistema permite manejar las operaciones comunes de un restaurante, como la administración de menús, pedidos, usuarios, reportes y más.
+<h2 align="center">🍽️ Sistema Restaurante – Gestión Web</h2>
 
----
-
-## 📌 ¿Qué es este proyecto?
-
-Este sistema está diseñado para facilitar la operación y administración de un restaurante pequeño o mediano. Incluye funcionalidades típicas como:
-
-- Gestión de usuarios y roles
-- Registro de pedidos
-- Administración de platos y menús
-- Control de inventario básico
-- Reportes administrativos
+Aplicación web para administrar de manera integral las operaciones internas de un restaurante: usuarios, pedidos, menús, inventario y reportes. Ideal para locales pequeños o medianos que buscan automatizar su gestión diaria.
 
 ---
 
-## 🎯 Objetivos
+## 🖥️ Requisitos del sistema
 
-- Automatizar tareas repetitivas en un entorno de restaurante
-- Proveer una plataforma centralizada para la gestión del negocio
-- Servir como base para mejoras futuras o ampliaciones (delivery, pagos, etc.)
-
----
-
-## 🧰 Tecnologías utilizadas
-
-| Tecnología | Descripción |
-|-----------|-------------|
-| PHP       | Backend del sistema |
-| MySQL, POstgreSQL     | Base de datos relacional |
-| Laravel (opcional) | Framework backend moderno (por confirmar si se usa) |
-| JavaScript | Interactividad en el frontend |
-| HTML/CSS  | Estructura y estilo del frontend |
-| XAMPP     | Entorno de servidor local |
-| Composer  | Gestión de dependencias PHP |
-| Gulp      | Automatización de tareas frontend |
+- PHP ≥ 7.4  
+- Composer  
+- MySQL / MariaDB  
+- XAMPP / Laragon / Servidor local  
+- Extensiones PHP necesarias: `pdo`, `mbstring`, `openssl`, `json`, `fileinfo`, `ctype`
 
 ---
 
-## 📥 Cómo clonar y ejecutar este proyecto
-
-### Prerrequisitos
-
-- Tener instalado **XAMPP** o similar
-- Tener instalado **Git**, **Composer** y un navegador
-- Tener una base de datos MySQL disponible
-
-### Pasos para clonar y ejecutar
+## ⚙️ Instalación del proyecto
 
 ```bash
-git clone https://gitingest.com/velardep/Sistema_Restaurante
+# Clonar el repositorio
+git clone https://gitingest.com/velardep/Sistema_Restaurante.git
 cd Sistema_Restaurante
+
+# Instalar dependencias PHP (si se usan)
 composer install
 ````
 
-1. Copia el proyecto a la carpeta `htdocs` de XAMPP.
-2. Crea una base de datos llamada `foothut2` en **phpMyAdmin**.
-3. Importa el archivo `foothut2.sql` ubicado en la raíz del proyecto.
-4. Levanta Apache y MySQL desde el panel de control de XAMPP.
-5. Abre tu navegador y visita:
-   👉 `http://localhost/Sistema_Restaurante`
+1. Coloca el proyecto dentro del directorio `htdocs` (si usas XAMPP).
+2. Crea una base de datos llamada `foothut2`.
+3. Importa el archivo `foothut2.sql` desde phpMyAdmin o CLI.
+4. Asegúrate de tener Apache y MySQL activos.
+5. Abre tu navegador en:
+
+   ```bash
+   http://localhost/Sistema_Restaurante
+   ```
 
 ---
 
-## 🚀 ¿Cómo funciona?
+## 🧪 ¿Cómo funciona?
 
-* El sistema inicia en `index.php`, donde se valida el inicio de sesión.
-* La arquitectura está organizada en carpetas como:
+* El sistema tiene autenticación de usuarios (login básico).
+* Organización por módulos:
 
-  * `model/`: Lógica de base de datos y consultas
-  * `view/`: Archivos de presentación (HTML, PHP)
-  * `public_html/` o `src/`: Recursos JS, CSS, imágenes
-  * `config/`: Archivos de configuración
-* El archivo `composer.json` maneja las dependencias del proyecto
-* Utiliza sesiones para control de usuarios y permisos
+  * `model/` → lógica y conexión con la base de datos
+  * `view/` → vistas HTML/PHP con la lógica visual
+  * `config/` → configuración general (BD, rutas, etc.)
+  * `file/`, `img/`, `public_html/` → recursos y assets
+* Puede funcionar sin framework, pero sigue una estructura MVC ligera.
 
 ---
+
+## ✨ Tecnologías usadas
+
+* PHP puro (con opción de integrar Laravel)
+* MySQL
+* JavaScript
+* HTML/CSS
+* Bootstrap (posiblemente)
+* Gulp (automatización frontend)
+* Composer (dependencias PHP)
+
+---
+
+## 📥 Restaurar la base de datos
+
+1. Accede a `http://localhost/phpmyadmin`
+2. Crea la base de datos `foothut2`
+3. Importa el archivo `foothut2.sql` incluido en el repositorio
+
+---
+
+## 🚀 Ejecución local
+
+Abre tu navegador y ve a:
+
+```
+http://localhost/Sistema_Restaurante
+```
 
 ## 🖼️ Capturas de pantalla
 
-> *(Agrega aquí imágenes para mostrar el login, dashboard, menú, etc. Puedes alojarlas en GitHub, Imgur, o `/img` y enlazarlas así):*
+<p align="center">
+  <img src="img/login.png" width="600" alt="Login del sistema"><br>
+  <em>Pantalla de inicio de sesión</em>
+</p>
 
-![Login](img/login.png)
-![Dashboard](img/dashboard.png)
-![Gestión de pedidos](img/pedidos.png)
+<p align="center">
+  <img src="img/dashboard.png" width="600" alt="Dashboard"><br>
+  <em>Panel principal del sistema</em>
+</p>
 
----
-
-## 📝 Notas importantes
-
-* Este proyecto aún está en desarrollo o puede necesitar ajustes según el entorno.
-* Si algo no funciona, asegúrate de revisar:
-
-  * Que el archivo `.env` (si se usa) esté correctamente configurado
-  * Que las rutas a recursos estén bien definidas
-* Puedes adaptar este sistema para otros tipos de negocios (cafeterías, bares, etc.)
+<p align="center">
+  <img src="img/gestion_pedidos.png" width="600" alt="Gestión de pedidos"><br>
+  <em>Gestión de pedidos y menú</em>
+</p>
 
 ---
 
-## 📫 Contacto
+## 🗒️ Notas
 
-Desarrollado por **[@velardep](https://gitingest.com/velardep)**
-Si tienes dudas o sugerencias, ¡no dudes en abrir un issue o contribuir al proyecto!
-
----
-
-```
+* El proyecto puede ampliarse fácilmente con funciones como delivery, pagos en línea, facturación, etc.
+* Si tienes errores con rutas o archivos, revisa el `.htaccess` o la configuración del entorno.
+* Se recomienda trabajar con un servidor local que soporte URLs amigables (mod\_rewrite habilitado).
 
 ---
 
-¿Quieres que genere directamente este `README.md` en archivo descargable o prefieres que te ayude a mejorarlo con imágenes reales y detalles específicos del funcionamiento?
-```
+---
+
+## 👨‍💻 Destinado a
+
+* Emprendedores gastronómicos
+* Restaurantes pequeños o medianos
+* Estudiantes de programación
+* Proyectos académicos de software
+
+---
+
+
+
+
